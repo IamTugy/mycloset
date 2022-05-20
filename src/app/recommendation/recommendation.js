@@ -60,7 +60,11 @@ const StandardImageList = () => {
   );
 }
 
-
+const Logo = styled.div`
+  font-family: PlaylistScript;
+  font-size: 90px;
+  color: #ff8f8f;
+`;
 
 export const Recommendation = () => {
   const [load, setLoad] = useState(false)
@@ -77,7 +81,7 @@ export const Recommendation = () => {
     <Main>
       {load ?
         <>
-          <img id="closet_logo" src={closet_logo} style={{height: '7rem'}}/>
+          <Logo> Lamode </Logo>
           <h2>Taylor made clothes are being prepared for you</h2>
           <CircularProgress size={100} style={{padding: "20px"}}/>
         </> :

@@ -3,8 +3,9 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import MoreIcon from '@mui/icons-material/MoreVert';
 
+import "../static/assets/fonts/PlaylistScript.ttf";
 
-import closet_logo from '../static/assets/closet.png'
+
 import qr from '../static/assets/qr-code.png'
 import './App.css';
 import {BottomTabs} from './bottomBar'
@@ -76,6 +77,13 @@ const MainSection = () => {
   }
 }
 
+const Logo = styled.div`
+  font-family: PlaylistScript;
+  font-size: 30px;
+  color: #ff8f8f;
+  height: 2rem;
+`;
+
 const App = () => {
   const recommendationFinished = useSelector(state => state.application.recommendationFinished)
   return (
@@ -83,7 +91,7 @@ const App = () => {
       {recommendationFinished ?
         <Main>
           <TopBarWrapper>
-            <img id="closet_logo" src={closet_logo} style={{height: '2rem'}}/>
+            <Logo> Lamode </Logo>
             <TopBarRightSection>
               <IconButton size="large" aria-label="search" color="inherit">
                 <SearchIcon/>

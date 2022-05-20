@@ -7,6 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+  font-family: "PlaylistScript";
+  src: local("Playlist Script"),
+    url("static/assets/fonts/PlaylistScript.ttf") format("ttf");
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
