@@ -1,6 +1,6 @@
 meta:
   schema-version: 0.1.0
-  created-on: "2024-02-04T12:04:59Z"
+  created-on: "2024-02-04T13:00:18Z"
   cli-version: 0.2.0
 projects:
   iamtugy-mycloset:
@@ -11,25 +11,22 @@ projects:
       name: npm
       version: "7"
     overrides:
-      loader-utils:
-        2.0.2:
-          use: 2.0.2-sp1
-      semver:
-        6.3.0:
-          use: 6.3.0-sp1
-        7.0.0:
-          use: 7.0.0-sp1
-        7.3.7:
-          use: 7.3.7-sp1
-      tough-cookie:
-        4.0.0:
-          use: 4.0.0-sp1
-      decode-uri-component:
-        0.2.0:
-          use: 0.2.0-sp1
       postcss:
         7.0.39:
           use: 7.0.39-sp1
+      tough-cookie:
+        4.0.0:
+          use: 4.0.0-sp1
+      semver:
+        7.3.7:
+          use: 7.3.7-sp1
+        7.0.0:
+          use: 7.0.0-sp1
+        6.3.0:
+          use: 6.3.0-sp1
+      loader-utils:
+        2.0.2:
+          use: 2.0.2-sp1
       word-wrap:
         1.2.3:
           use: 1.2.3-sp1
@@ -42,3 +39,6 @@ projects:
       json5:
         2.2.1:
           use: 2.2.1-sp1
+      decode-uri-component:
+        0.2.0:
+          use: 0.2.0-sp1
